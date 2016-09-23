@@ -1,26 +1,21 @@
-/* @flow */
+const INCREMENT = 'INCREMENT';
+const DECREMENT = 'DECREMENT';
 
-const INCREMENT = 'INCREMENT'
-const DECREMENT = 'DECREMENT'
-
-type Action = Object<{ type: string }>
-type Counter = number
-
-export default function counter(state: Counter = 0, action: Action): Counter {
+export default function counter(state = 0, action) {
   switch (action.type) {
     case DECREMENT:
-      return state - 1
+      return state - 1;
     case INCREMENT:
-      return state + 1
+      return state + 1;
     default:
-      return state
+      return state;
   }
 }
 
-export const decrement = (): Action => ({
+export const decrement = () => ({
   type: DECREMENT,
-})
+});
 
-export const increment = (): Action => ({
+export const increment = () => ({
   type: INCREMENT,
-})
+});

@@ -1,18 +1,13 @@
-/* @flow */
+import React from 'react';
+import { Text } from 'react-native';
+import styles from './styles';
 
-import React from 'react'
-import { Text } from 'react-native'
-import styles from './styles'
+function Title(props) {
+  const { children } = props;
 
-type Props = {
-  children: string
-}
-
-const Title = (props: Props) => {
-  const { children } = props
   return (
     <Text style={styles.text}>{children}</Text>
   )
 }
 
-export default Title
+export default Title;

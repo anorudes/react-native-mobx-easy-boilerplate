@@ -1,1 +1,1 @@
-export counter from './modules/counter'
+export counter from './modules/counter';

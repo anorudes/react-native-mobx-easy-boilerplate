@@ -1,21 +1,14 @@
-/* @flow */
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { decrement, increment } from '@store/modules/counter';
+import Container from '@components/Container';
+import Title from '@components/Title';
+import Counter from '@components/Counter';
 
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { decrement, increment } from '@store/modules/counter'
-import Container from '@components/Container'
-import Title from '@components/Title'
-import Counter from '@components/Counter'
-
-type Props = {
-  counter: number,
-  dispatch: (a: Function) => any,
-}
-
-class CounterContainer extends Component<void, Props, void> {
-  props: Props
+class CounterContainer extends Component {
   render() {
-    const { counter, dispatch } = this.props
+    const { counter, dispatch } = this.props;
+
     return (
       <Container>
         <Title>Counter</Title>
@@ -25,12 +18,12 @@ class CounterContainer extends Component<void, Props, void> {
           increment={() => dispatch(increment())}
         />
       </Container>
-    )
+    );
   }
 }
 
 const mapStateToProps = (state) => ({
   counter: state.counter,
-})
+});
 
-export default connect(mapStateToProps)(CounterContainer)
+export default connect(mapStateToProps)(CounterContainer);

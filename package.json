@@ -16,8 +16,7 @@
     "build-ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js --bundle-output iOS/main.jsbundle --platform 'ios' --assets-dest ./  --dev false --reset-cache",
     "build-android": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.android.js --bundle-output iOS/main.jsbundle --platform 'android' --assets-dest ./  --dev false --reset-cache",
     "reactotron": "node_modules/.bin/reactotron",
-    "android-setup-port": "adb reverse tcp:8081 tcp:8080",
-    "flow:check": "node bin/flow-check"
+    "android-setup-port": "adb reverse tcp:8081 tcp:8080"
   },
   "engines": {
     "node": ">=4",
@@ -36,6 +35,7 @@
   "devDependencies": {
     "babel-eslint": "^6.0.4",
     "babel-preset-react-native-stage-0": "^1.0.1",
+    "babel-preset-stage-0": "^6.5.0",
     "eslint": "^2.9.0",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-import": "^1.7.0",
