@@ -1,29 +1,25 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { decrement, increment } from '@store/modules/counter';
+import { observer } from 'mobx-react/native';
+import connect from '@mobx/connect';
 import Container from '@components/Container';
 import Title from '@components/Title';
 import Counter from '@components/Counter';
 
 class CounterContainer extends Component {
   render() {
-    const { counter, dispatch } = this.props;
+    const { counter } = this.props;
 
     return (
       <Container>
         <Title>Counter</Title>
         <Counter
-          value={counter}
-          decrement={() => dispatch(decrement())}
-          increment={() => dispatch(increment())}
+          value={counter.value}
+          decrement={() => counter.decrement()}
+          increment={() => counter.increment()}
         />
       </Container>
     );
   }
 }
 
-const mapStateToProps = (state) => ({
-  counter: state.counter,
-});
-
-export default connect(mapStateToProps)(CounterContainer);
+export default connect(observer(CounterContainer));

@@ -1,12 +1,10 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import createStore from '@store/create';
 import Router from '@scenes';
 
-const Kernel = () => (
-  <Provider store={createStore()}>
+function App() {
+  return (
     <Router />
-  </Provider>
-);
+  )
+};
 
-export default Kernel;
+export default App;
