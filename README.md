@@ -29,7 +29,7 @@ $ cd myAwesomeApp
 $ npm i                         # Install Node.js components listed in ./package.json
 ```
 
-### How to use ?
+### How to use?
 ```shell
 $ npm start                     # or: node_modules/react-native/packager/packager.sh
 ```
@@ -47,6 +47,11 @@ Start your emulator or connect your device.
 
 ## Debugging
 [Access the in-app developer menu](https://facebook.github.io/react-native/docs/debugging.html) and select ``Debug in Chrome``.
+
+#### Show log
+```shell
+$ npm run log
+```
 
 #### Run Reactotron
 ```shell
