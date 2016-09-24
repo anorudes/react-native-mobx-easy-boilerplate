@@ -8,7 +8,6 @@ class Counter {
   }
 
   @action increment() {
-    console.log('123213');
     this.value++;
   }
 }

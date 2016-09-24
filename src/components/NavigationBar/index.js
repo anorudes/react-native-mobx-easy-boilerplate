@@ -1,4 +1,4 @@
-export const styles = {
+export default {
   container: {
     backgroundColor: 'white',
   },

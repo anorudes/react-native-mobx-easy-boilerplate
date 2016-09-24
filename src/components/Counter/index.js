@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { View, Text } from 'react-native';
 import Button from '@components/Button';
 import styles from './styles';
 
 function Counter(props) {
-  const { value, decrement, increment } = props
+  const { value = 0, decrement, increment } = props;
 
   return (
     <View style={styles.container}>
@@ -15,8 +15,10 @@ function Counter(props) {
   );
 }
 
-Counter.defaultProps = {
-  value: 0,
+Counter.propTypes = {
+  value: PropTypes.number,
+  decrement: PropTypes.func,
+  increment: PropTypes.func,
 };
 
 export default Counter;

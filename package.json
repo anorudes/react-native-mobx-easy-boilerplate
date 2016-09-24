@@ -1,39 +1,43 @@
 {
-  "name": "react-native-inSRC",
-  "version": "0.0.1",
+  "name": "react-native-mobx-easy-boilerplate",
+  "version": "1.0.0",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LeoLeBras/react-native-redux-starter-kit/issues"
+    "url": "https://github.com/anorudes/react-native-mobx-easy-boilerplate/issues"
   },
+  "authors": [
+    "Max Anoru (https://github.com/anorudes)",
+    "Léo LE BRAS <leo.lebrasf@gmail.com> (http://github.com/LeoLeBras)"
+  ],
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh",
+    "run:android": "react-native run-android",
+    "log": "adb logcat",
     "build:ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js --bundle-output iOS/main.jsbundle --platform 'ios' --assets-dest ./  --dev false --reset-cache",
     "build:android": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.android.js --bundle-output iOS/main.jsbundle --platform 'android' --assets-dest ./  --dev false --reset-cache",
-    "reactotron": "node_modules/.bin/reactotron"
+    "reactotron": "node_modules/.bin/reactotron",
+    "lint": "eslint src"
   },
   "engines": {
     "node": ">=4",
     "npm": ">=2 <4"
   },
   "dependencies": {
-    "apisauce": "^0.1.3",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
-    "immutable": "^3.8.1",
-    "mobx-react": "^3.5.6",
+    "babel-plugin-transform-decorators-legacy": "1.3.4",
+    "mobx-react": "3.5.6",
     "react": "15.0.2",
-    "react-native": "^0.26.1",
-    "react-native-router-flux": "^3.26.0"
+    "react-native": "0.26.3",
+    "react-native-router-flux": "3.35.0"
   },
   "devDependencies": {
-    "babel-eslint": "^6.0.4",
-    "babel-preset-react-native-stage-0": "^1.0.1",
-    "babel-preset-stage-0": "^6.5.0",
-    "eslint": "^2.9.0",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-plugin-import": "^1.7.0",
-    "eslint-plugin-jsx-a11y": "^1.2.0",
-    "eslint-plugin-react": "^5.0.1",
+    "babel-preset-react-native-stage-0": "1.0.1",
     "mobx": "^2.5.1",
-    "reactotron": "^0.6.1"
+    "reactotron": "^0.6.1",
+    "babel-eslint": "^6.0.0",
+    "eslint": "^3.2.2",
+    "eslint-config-airbnb": "^10.0.0",
+    "eslint-plugin-import": "^1.12.0",
+    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-react": "^6.0.0"
   }
 }

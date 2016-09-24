@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Platform } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import Container from '@components/Container';
 import Title from '@components/Title';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Actions, Scene } from 'react-native-router-flux';
-import { styles } from '@components/NavigationBar';
+import styles from '@components/NavigationBar';
 import LauchContainer from '@containers/LauchContainer';
 import CounterContainer from '@containers/CounterContainer';
 

@@ -1,6 +1,4 @@
-/* @flow */
-
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   text: {
@@ -8,6 +6,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
-})
+});
 
-export default styles
+export default styles;

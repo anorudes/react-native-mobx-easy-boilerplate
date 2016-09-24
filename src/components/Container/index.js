@@ -1,4 +1,4 @@
-import React, { Element } from 'react';
+import React, { PropTypes } from 'react';
 import { View } from 'react-native';
 import styles from './styles';
 
@@ -9,5 +9,9 @@ function Container(props) {
     <View style={styles.container}>{children}</View>
   );
 }
+
+Container.propTypes = {
+  children: PropTypes.array,
+};
 
 export default Container;

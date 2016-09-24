@@ -1,7 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { counter } from '@stores';
 
-function Connect(DecoratedComponent) {
+function connect(DecoratedComponent) {
   class Connect extends Component {
     render() {
       return (
@@ -11,9 +11,9 @@ function Connect(DecoratedComponent) {
         />
       );
     }
-  };
+  }
 
   return Connect;
-};
+}
 
-export default Connect;
+export default connect;
