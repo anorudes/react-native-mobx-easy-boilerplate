@@ -57,9 +57,6 @@ $ npm run log
 ```shell
 $ npm run reactotron
 ```
-
-![](https://github.com/skellock/reactotron/blob/master/images/Reactotron.gif)
-
 See the [Reacotron docs](https://github.com/skellock/reactotron) for more features.
 
 ## Create a release build
