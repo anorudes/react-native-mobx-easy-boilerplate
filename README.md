@@ -50,7 +50,8 @@ Start your emulator or connect your device.
 
 #### Show log
 ```shell
-$ npm run log
+$ npm run log # adb shell "logcat | grep 'ReactNativeJS'"
+$ npm run log:full # adb logcat
 ```
 
 #### Run Reactotron

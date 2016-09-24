@@ -11,10 +11,10 @@
   ],
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh",
-    "run:android": "react-native run-android",
-    "log": "adb shell \"logcat | grep 'ReactNativeJS'\"",
     "build:ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js --bundle-output iOS/main.jsbundle --platform 'ios' --assets-dest ./  --dev false --reset-cache",
     "build:android": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.android.js --bundle-output iOS/main.jsbundle --platform 'android' --assets-dest ./  --dev false --reset-cache",
+    "log": "adb shell \"logcat | grep 'ReactNativeJS'\"",
+    "log:full": "adb logcat",
     "reactotron": "node_modules/.bin/reactotron",
     "lint": "eslint src"
   },
